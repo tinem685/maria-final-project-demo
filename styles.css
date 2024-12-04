@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+} 
+
+.container {
+    text-align: center;}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Home Button */
+.button.home {
+    color: white;
+    background-color: #FF5733; /* Orange */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
+}
+.button.home:hover {
+    background-color: #c44527;
+    transform: translateY(-3px);
+}
+
+/* Book Now Button */
+.button.book-now {
+    color: white;
+    background-color: #007BFF; /* Blue */
+    border: 2px solid #000000;
+}
+.button.book-now:hover {
+    background-color: #0056b3;
+    border-color: #003f7f;
+    transform: scale(1.05);
+}
+
+/* Sign Up Button */
+.button.sign-up {
+    color: #fff;
+    background: linear-gradient(45deg, #28a745, #218838); /* Green gradient */
+    border: 2px solid #000000;}
+.button.sign-up:hover {
+    background: linear-gradient(45deg, #218838, #196c2e);
+    transform: scale(1.05);
+    border-color: rgb(0, 41, 0)
+}
+
+/* Testimonials Button */
+.button.testimonials {
+    color: rgb(255, 255, 255);
+    background-color: #FFC107; /* Yellow */
+    border: 2px solid #E0A800;
+    border: 2px solid #000000;
+}
+.button.testimonials:hover {
+    background-color: #E0A800;
+    border-color: #C69500;
+    transform: translateY(-2px);
+}
+
+/* Contact Button */
+.button.contact {
+    color: white;
+    background-color: #6f42c1; /* Purple */
+    border: 2px solid #000000;
+    padding: 15px 40px;
+}
+.button.contact:hover {
+    background-color: #5936a3;
+    transform: scale(1.1);
+    border-color: rgb(0, 0, 59)
+}
+ 
+.hero-section {
+    background: linear-gradient(135deg, #250ad5, #003f7f, #0056b3, #007BFF, #007bff, #00c6ff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-content {
+    margin: 20px;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.home-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.home-content li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+
+
+.book-header {
+    background: linear-gradient(135deg, #007BFF, #00c6ff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.book-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.book-header p {
+    font-size: 1.2rem;
+}
+
+.booking-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-details {
+    margin: 20px;
+    text-align: center;
+}
+
+.booking-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.booking-details ol {
+    text-align: left;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 600px;
+}
+
+.booking-details li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* General Hero Section Styles */
+.hero-section {
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Specific Gradient Colors for Each Page */
+
+/* Sign-Up Page */
+.sign-up-hero {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Orange Gradient */
+}
+
+/* Testimonials Page */
+.testimonials-hero {
+    background: linear-gradient(135deg, #6a5acd, #8a2be2); /* Purple Gradient */
+}
+
+/* Contact Page */
+.contact-hero {
+    background: linear-gradient(135deg, #32cd32, #98fb98); /* Lime Green Gradient */
+}
+
+/* Hero Section Title */
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Hero Section Subtitle */
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Style for the Back to Main Page link */
+.back-button {
+    position: fixed;   /* Fixes the link at a specific position relative to the viewport */
+    bottom: 20px;      /* Adjusts the distance from the bottom of the screen */
+    left: 20px;        /* Adjusts the distance from the left side of the screen */
+    background-color: #007bff; /* Blue background for the button */
+    color: white;      /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem;    /* Font size for the text */
+    text-decoration: none;  /* Removes underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect for the Back to Main Page link */
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
