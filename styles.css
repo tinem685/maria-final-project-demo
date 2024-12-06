@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -74,7 +75,7 @@ body {
 /* Contact Button */
 .button.contact {
     color: white;
-    background-color: #6f42c1; /* Purple */
+    background-color: #6f42c1; 
     border: 2px solid #000000;
     padding: 15px 40px;
 }
@@ -129,8 +130,6 @@ body {
     font-size: 1.2rem;
 }
 
-
-
 .book-header {
     background: linear-gradient(135deg, #007BFF, #00c6ff);
     color: white;
@@ -178,9 +177,6 @@ body {
     font-size: 1.2rem;
 }
 
-
-
-
 /* General Hero Section Styles */
 .hero-section {
     padding: 40px 20px;
@@ -190,48 +186,50 @@ body {
 
 /* Specific Gradient Colors for Each Page */
 
-/* Sign-Up Page */
 .sign-up-hero {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Orange Gradient */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
 }
 
-/* Testimonials Page */
 .testimonials-hero {
-    background: linear-gradient(135deg, #6a5acd, #8a2be2); /* Purple Gradient */
+    background: linear-gradient(135deg, #6a5acd, #8a2be2); 
 }
 
-/* Contact Page */
 .contact-hero {
-    background: linear-gradient(135deg, #32cd32, #98fb98); /* Lime Green Gradient */
+    background: linear-gradient(135deg, #32cd32, #98fb98); 
 }
 
-/* Hero Section Title */
 .hero-section h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-/* Hero Section Subtitle */
 .hero-section p {
     font-size: 1.2rem;
 }
 
-/* Style for the Back to Main Page link */
 .back-button {
-    position: fixed;   /* Fixes the link at a specific position relative to the viewport */
-    bottom: 20px;      /* Adjusts the distance from the bottom of the screen */
-    left: 20px;        /* Adjusts the distance from the left side of the screen */
-    background-color: #007bff; /* Blue background for the button */
-    color: white;      /* White text color */
-    padding: 10px 20px; /* Padding for the button */
-    font-size: 1rem;    /* Font size for the text */
-    text-decoration: none;  /* Removes underline from the link */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    position: fixed;   
+    bottom: 20px;     
+    left: 20px;      
+    background-color: #007bff; 
+    color: white;      
+    padding: 10px 20px;
+    font-size: 1rem;    
+    text-decoration: none; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
 }
 
-/* Add hover effect for the Back to Main Page link */
+
 .back-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
+}
+
+@media screen and (max-width: 650px) {
+
+    body{
+        flex-direction: column;
+    }
+    
 }
