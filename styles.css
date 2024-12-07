@@ -1,12 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
+   /* General Reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333; /* Dark background */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+}
+
+.nav-item {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #ff6347; /* Highlight color on hover (tomato) */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 2rem;
     background-color: #f4f4f4;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff6347;
+}
+
 } 
 
 .container {
@@ -62,7 +135,7 @@ body {
 /* Testimonials Button */
 .button.testimonials {
     color: rgb(255, 255, 255);
-    background-color: #FFC107; /* Yellow */
+    background-color: #ffbf00; /* Yellow */
     border: 2px solid #E0A800;
     border: 2px solid #000000;
 }
@@ -232,4 +305,49 @@ body {
         flex-direction: column;
     }
     
+}
+
+/* Author Page Styling */
+.author-bio, .skills-experience, .awards {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.author-bio h2, .skills-experience h2, .awards h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+ol, ul {
+    margin-left: 1.5rem;
+}
+
+.back-button {
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    background: #007BFF;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}
+
+.destination-image {
+    width: 25%; /* The image will take up half the width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+article {
+    margin-bottom: 30px; /* Space between articles */
 }
