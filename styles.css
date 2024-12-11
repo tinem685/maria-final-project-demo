@@ -351,3 +351,25 @@ ol, ul {
 article {
     margin-bottom: 30px; /* Space between articles */
 }
+
+.testimonials-page {
+    padding: 20px;
+}
+
+.testimonials-page .travel-recommendations {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonials-page article {
+    margin-bottom: 30px;
+}
+
+.testimonials-page p, 
+.testimonials-page h1, 
+.testimonials-page h2, 
+.testimonials-page h3 {
+    text-align: justify;
+    line-height: 1.6;
+}
