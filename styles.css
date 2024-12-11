@@ -1,4 +1,5 @@
 body {
+
    /* General Reset */
 body, ul {
     margin: 0;
@@ -299,14 +300,6 @@ body, ul {
     background-color: #0056b3; 
 }
 
-@media screen and (max-width: 650px) {
-
-    body{
-        flex-direction: column;
-    }
-    
-}
-
 /* Author Page Styling */
 .author-bio, .skills-experience, .awards {
     margin: 2rem auto;
@@ -352,10 +345,6 @@ article {
     margin-bottom: 30px; /* Space between articles */
 }
 
-.testimonials-page {
-    padding: 20px;
-}
-
 .testimonials-page .travel-recommendations {
     max-width: 900px;
     margin: 0 auto;
@@ -372,4 +361,46 @@ article {
 .testimonials-page h3 {
     text-align: justify;
     line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.welcome-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
 }
